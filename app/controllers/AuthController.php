@@ -10,13 +10,6 @@ class AuthController extends BaseController {
 	protected $login_columns = array('username', 'email');
 
 	/**
-	 * Support Email Address
-	 *
-	 * @var string
-	 */
-	protected $support_email = 'jeitnier@gmail.com';
-
-	/**
 	 * Handles login interactions
 	 *
 	 * @return object|string
