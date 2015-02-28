@@ -51,9 +51,9 @@ class DatabaseBackup extends Command {
 	{
 		$frequency = $this->option('frequency');
 
-		$database        = Config::get('database.connections.mysql.database');
-		$username        = Config::get('database.connections.mysql.username');
-		$password        = Config::get('database.connections.mysql.password');
+		$database        = $_ENV['DB_DATABASE'];
+		$username        = $_ENV['DB_USERNAME'];
+		$password        = $_ENV['DB_PASSWORD'];
 		$backup_path     = storage_path() . '/dbdumps/';
 		$backup_filename = $database . '-' . date('Y-m-d-H.i.s') . '-' . $frequency . '.sql.gz';
 
