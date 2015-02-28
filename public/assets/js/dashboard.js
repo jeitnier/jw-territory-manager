@@ -10,13 +10,6 @@ $('.modal').on('shown.bs.modal', function() {
     $('form :input:not(input[type=hidden], button):first').focus();
 });
 
-// auto fade alerts
-window.setTimeout(function() {
-    $('.alert').fadeTo(1500, 0).slideUp(500, function() {
-        //
-    });
-}, 3000);
-
 // select-all/deselect-all
 $('#select-all').on('change', function() {
     $('input:checkbox').prop('checked', $(this).prop('checked'));

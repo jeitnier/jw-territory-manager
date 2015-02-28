@@ -1,6 +1,6 @@
 @if ($errors->count() > 0)
 <div class="row">
-	<div class="col-xs-12"><!-- col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 -->
+	<div class="col-xs-12">
 		<div class="alert alert-danger">
 			<button type="button" class="close" data-dismiss="alert"><i class="fa fa-times"></i></button>
 			<h4>Errors Found</h4>
