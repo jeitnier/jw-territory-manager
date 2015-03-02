@@ -71,7 +71,7 @@
 
 							<div class="form-group indent">
 								<select id="territory-id" class="form-control input-lg" name="reports[territory-history][]" multiple="multiple">
-									@foreach (Territories::labelAscending()->get() AS $territory)
+									@foreach (Territories::labelAscending() AS $territory)
 									<option value="{{ $territory->id }}">{{ $territory->label }}</option>
 									@endforeach
 								</select>

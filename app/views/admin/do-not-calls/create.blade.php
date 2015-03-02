@@ -28,7 +28,7 @@ Add Do Not Call ::
 								<div class="form-group">
 									<label for="territory-id">Territory</label>
 									<select id="territory-id" name="territory_id" class="form-control input-lg" required autofocus>
-										@foreach (Territories::labelAscending()->get() AS $territory)
+										@foreach (Territories::labelAscending() AS $territory)
 										<option value="{{ $territory->id }}">{{ $territory->label }}</option>
 										@endforeach
 									</select>
