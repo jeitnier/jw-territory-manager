@@ -28,7 +28,7 @@ Edit App Settings ::
                                     <label for="admin-email">
                                         Admin Email Address
                                     </label>
-                                    <input type="text" id="admin-email" class="form-control input-lg"
+                                    <input type="email" id="admin-email" class="form-control input-lg"
                                            name="admin_email"
                                            value="{{ $settings['admin_email'] }}" required>
                                 </div>
@@ -51,7 +51,7 @@ Edit App Settings ::
 									<label for="territory-not-worked-interval-months">
 										# Months Lapsed Until Territory Becomes Available For Sign Out
 									</label>
-									<input type="text" id="territory-not-worked-interval-months" class="form-control input-lg"
+									<input type="number" id="territory-not-worked-interval-months" class="form-control input-lg"
                                            name="territory_not_worked_interval_months"
                                            value="{{ $settings['territory_not_worked_interval_months'] }}" required>
 								</div>
@@ -60,7 +60,7 @@ Edit App Settings ::
 									<label for="territory-amount-available-house">
 										# House-to-House Territories to Allow for Check-Out <em>(0 = Unlimited)</em>
 									</label>
-									<input type="text" id="territory-amount-available-house" class="form-control input-lg"
+									<input type="number" id="territory-amount-available-house" class="form-control input-lg"
                                            name="territory_amount_available_house"
                                            value="{{ $settings['territory_amount_available_house'] }}" required>
 								</div>
@@ -69,7 +69,7 @@ Edit App Settings ::
 									<label for="territory-amount-available-business">
 										# Business Territories to Allow for Check-Out <em>(0 = Unlimited)</em>
 									</label>
-									<input type="text" id="territory-amount-available-business"
+									<input type="number" id="territory-amount-available-business"
                                            class="form-control input-lg" name="territory_amount_available_business"
                                            value="{{ $settings['territory_amount_available_business'] }}" required>
 								</div>
@@ -78,7 +78,7 @@ Edit App Settings ::
 									<label for="territory-amount-available-lwp">
 										# Letter Writing / Phone Territories to Allow for Check-Out <em>(0 = Unlimited)</em>
 									</label>
-									<input type="text" id="territory-amount-available-lwp"
+									<input type="number" id="territory-amount-available-lwp"
                                            class="form-control input-lg" name="territory_amount_available_lwp"
                                            value="{{ $settings['territory_amount_available_lwp'] }}" required>
 								</div>
@@ -87,7 +87,7 @@ Edit App Settings ::
 									<label for="number-territories-allowed">
                                         # of Territories a Publisher can Sign-Out Simultaneously
                                     </label>
-									<input type="text" id="number-territories-allowed" class="form-control input-lg"
+									<input type="number" id="number-territories-allowed" class="form-control input-lg"
                                            name="number_territories_allowed"
                                            value="{{ $settings['number_territories_allowed'] }}" required>
 								</div>
@@ -96,10 +96,19 @@ Edit App Settings ::
 									<label for="territory-soon-days">
                                         # of Days Before Territory is Due to Show Warning in Dashboard
                                     </label>
-									<input type="text" id="territory-soon-days" class="form-control input-lg"
+									<input type="number" id="territory-soon-days" class="form-control input-lg"
                                            name="territory_soon_days"
                                            value="{{ $settings['territory_soon_days'] }}" required>
 								</div>
+
+                                <div class="form-group">
+                                    <label for="number-territories-showed-co-report">
+                                        # of Territory Sign In/Out's to Show on C.O. Report
+                                    </label>
+                                    <input type="number" id="number-territories-showed-co-report" class="form-control input-lg"
+                                           name="number_territories_showed_co_report"
+                                           value="{{ $settings['number_territories_showed_co_report'] }}" required>
+                                </div>
 
                                 <div class="form-group">
                                     <label>Force Page Break In Reports?</label>
@@ -122,7 +131,7 @@ Edit App Settings ::
                                     <label for="number-daily-dropbox-backups">
                                         # of Daily Dropbox Backups to Keep at a Time
                                     </label>
-                                    <input type="text" id="number-daily-dropbox-backups" class="form-control input-lg"
+                                    <input type="number" id="number-daily-dropbox-backups" class="form-control input-lg"
                                            name="number_daily_dropbox_backups"
                                            value="{{ $settings['number_daily_dropbox_backups'] }}" required>
                                 </div>
@@ -131,7 +140,7 @@ Edit App Settings ::
                                     <label for="number-weekly-dropbox-backups">
                                         # of Weekly Dropbox Backups to Keep at a Time
                                     </label>
-                                    <input type="text" id="number-weekly-dropbox-backups" class="form-control input-lg"
+                                    <input type="number" id="number-weekly-dropbox-backups" class="form-control input-lg"
                                            name="number_weekly_dropbox_backups"
                                            value="{{ $settings['number_weekly_dropbox_backups'] }}" required>
                                 </div>

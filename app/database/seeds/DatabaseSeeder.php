@@ -103,6 +103,7 @@ class SettingsSeeder extends Seeder {
 		Settings::create(['option_name' => 'territory_amount_available_lwp', 'option_value' => 5]);
 		Settings::create(['option_name' => 'number_territories_allowed', 'option_value' => 3]);
 		Settings::create(['option_name' => 'territory_soon_days', 'option_value' => 21]);
+		Settings::create(['option_name' => 'number_territories_showed_co_report', 'option_value' => 3]);
 		Settings::create(['option_name' => 'reports_force_page_break', 'option_value' => 'true']);
 		Settings::create(['option_name' => 'number_daily_dropbox_backups', 'option_value' => 5]);
 		Settings::create(['option_name' => 'number_weekly_dropbox_backups', 'option_value' => 5]);
