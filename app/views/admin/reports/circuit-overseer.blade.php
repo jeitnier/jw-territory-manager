@@ -46,7 +46,9 @@
 
 					@if ( ! $territory->history->isEmpty())
 
-					@foreach ($territory->history AS $history)
+					@foreach ($territory->history AS $key => $history)
+
+                    <?php if ($key >= Options::get('number_territories_showed_co_report')) continue; ?>
 
 					<tr>
 
